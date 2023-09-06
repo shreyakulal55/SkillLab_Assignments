@@ -1,0 +1,25 @@
+to insert single data:
+db.Boys.insertOne({name:"Prem",USN:"4SF21AD040",MARKS:"15"})
+
+to insert multiple data:
+db.Girls.insertMany([{name:"Fairooza",USN:"4SF21AD017",MARKS:"18"},{name:"Shreya",USN:"4SF21AD050",MARKS:"18"},{name:"Samanvitha",USN:"4SF21AD044",MARKS:"14"}
+
+db.Boys.find()
+
+db.Girls.find({MARKS:"18"})
+
+UPDATE:-
+UPDATE ONE
+UPDATE MANY
+
+db.Boys.updateOne({MARKS:"99"},{$set:{MARKS:"0"}})
+ db.Girls.updateMany({MARKS:"18"},{$set:{MARKS:"25"}})
+
+REPLACE:-
+db.collection.replaceOne()
+
+DELETE:-
+multiple
+one
+db.Boys.deleteOne({name:"Murshid"})
+db.Boys.deleteMany({name:"Prem"},{name:"Karthik"})
